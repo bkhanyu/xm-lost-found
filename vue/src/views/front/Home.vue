@@ -60,22 +60,6 @@
                       </div>
                     </div>
                   </el-col>
-                  <el-col :span="12" v-for="item in foundData" style="margin-bottom: 20px">
-                    <div class="transition card">
-                      <div style="display: flex">
-                        <img :src="item.img" alt="" style="height: 75px; width: 75px; border: 1px solid #eeeeee; border-radius: 10px">
-                        <div style="margin-left: 10px">
-                          <div style="font-weight: 550; color: #ef5d26">{{ item.name }}</div>
-                          <div style="margin-top: 10px; color: #666666">发布人：{{ item.userName }}</div>
-                          <div style="margin-top: 5px; color: #666666">时间：{{ item.time }}</div>
-                        </div>
-                      </div>
-                      <div style="margin-top: 20px">
-                        <el-button type="info" size="mini" @click="viewContent(item.content)">查看详情</el-button>
-                        <el-button type="success" size="mini" @click="contact(item, '失物广场')">联系失主</el-button>
-                      </div>
-                    </div>
-                  </el-col>
                 </el-row>
               </div>
             </div>
